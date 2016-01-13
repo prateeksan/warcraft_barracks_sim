@@ -14,7 +14,7 @@ class Barracks
   end
 
   def can_train_footman?
-    (gold >= FOOTMAN_TRAINING_GOLD_COST) && (food >= FOOTMAN_TRAINING_FOOD_COST) 
+    gold >= FOOTMAN_TRAINING_GOLD_COST && food >= FOOTMAN_TRAINING_FOOD_COST 
   end
 
   def can_train_peasant?

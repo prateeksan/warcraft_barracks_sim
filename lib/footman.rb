@@ -10,6 +10,7 @@ class Footman < Unit
   end
 
   def attack!(enemy)
+    return enemy.damage(@attack_power/2) if enemy.is_a? Barracks
     enemy.damage(@attack_power)
   end
 
